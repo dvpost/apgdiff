@@ -1,3 +1,10 @@
+# Example use
+```
+pg_dump -h localhost -U postgres -n public -x -s test_db > test_db.sql
+pg_dump -h localhost -U postgres -n public -x -s test_db2 > test_db2.sql
+java -jar releases/apgdiff-2.7.0.jar test_db2.sql test_db.sql
+```
+
 # Another PostgreSQL Diff Tool (aka apgdiff)
 
 Another PostgreSQL Diff Tool is free PostgreSQL diff tool that is useful for
